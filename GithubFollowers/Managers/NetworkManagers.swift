@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 class NetworkManagers {
     static let shared = NetworkManagers()
     let baseURL = "https://api.github.com/users/"
+    let cache   = NSCache<NSString, UIImage>()
     
     private init() {}
     

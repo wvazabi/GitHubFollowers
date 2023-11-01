@@ -32,7 +32,7 @@ class GFButton: UIButton {
     //only configure in this class
     private func configure() {
         layer.cornerRadius      = 10
-        titleLabel?.textColor   = .white
+        setTitleColor(.white, for: .normal)
         //Dynamic font type
         titleLabel?.font        = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
